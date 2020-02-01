@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const H1 = styled.h1`
   font-family: "Zhi Mang Xing", cursive;
+  font-style: italic;
+  font-size: 2.5em;
 `;
 
 export const StoryWrapper = styled.section`
@@ -24,6 +26,7 @@ export const StoryTitle = styled.h2`
   line-height: 1.8;
   margin: 0;
   text-decoration: none;
+  font-family: "VT323", monospace;
 
   a {
     color: #2e2e2e;
@@ -34,6 +37,10 @@ export const StoryTitle = styled.h2`
 
 export const StoryMeta = styled.div`
   font-style: italic;
+
+  > span:first-child {
+    margin-left: 10px;
+  }
 
   > span:not(:first-child):before {
     content: ".";
