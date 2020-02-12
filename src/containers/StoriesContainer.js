@@ -6,10 +6,10 @@ import {
   GlobalStyle,
   StoriesContainerWrapper
 } from "../styles/StoriesContainerStyles";
-import { useInfineteScroll } from "../hooks/useInfiniteScroll";
+import { useInfiniteScroll } from "../hooks/useInfiniteScroll";
 
 export const StoriesContainer = () => {
-  const { count } = useInfineteScroll();
+  const { count } = useInfiniteScroll();
   const [storyIds, setStoryIds] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export const StoriesContainer = () => {
     console.log(">>> count", count);
 
     // getStory(20970623).then(data => console.log(data));
-  }, [count]);
+  }, []);
 
   // [] when the component mounts, do this...
   return (
